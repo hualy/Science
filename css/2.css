@@ -1,0 +1,380 @@
+body{
+    margin: 0px;
+    /*background-color: black;*/
+    /*background-image: url(../image/1.JPG);*/
+    background-repeat: none;
+    font-family: Arial,Tahoma,sans-serif;
+    color:#666666;
+}
+.banner{
+    height: 190px;
+    width: 1000px;
+    position: relative;
+    margin:0 auto;
+    background-image: url(../image/banner.jpg);
+}
+.nav{
+    background-color: #4ea9ff;
+    height: 56px;
+    width: 1000px;
+    margin: 1px auto;
+}
+.menu, .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+.menu {
+    width: 1000px;
+    height: 50px;
+    background-color: #4d4d4d;
+}
+.menu li {
+    /*background: -moz-linear-gradient(#292929, #252525);
+    background: -ms-linear-gradient(#292929, #252525);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #292929), color-stop(100%, #252525));
+    background: -webkit-linear-gradient(#292929, #252525);
+    background: -o-linear-gradient(#292929, #252525);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#292929', endColorstr='#252525');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#292929', endColorstr='#252525')";
+    background: linear-gradient(#292929, #252525);*/
+    /*border-bottom: 2px solid #181818;
+    border-top: 2px solid #303030;*/
+    min-width: 160px;
+    /*min-width: 1000px;
+*/}
+.menu > li {
+    display: block;
+    float: left;
+    position: relative;
+}
+/*.menu > li:first-child {
+    border-radius: 5px 0 0;
+}*/
+.menu a {
+    border-left: 3px solid rgba(0, 0, 0, 0);
+    color: #fff;
+    display: block;
+    font-family: 'Lucida Console';
+    font-size: 16px;
+    line-height: 50px;
+    /*padding: 0 25px;*/
+    text-align: center;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.menu a:hover{
+    color: #4ea9ff;
+}
+
+/* submenu styles */
+.submenu {
+    left: 0;
+    max-height: 0;
+    position: absolute;
+    top: 100%;
+    z-index: 0;
+    -webkit-perspective: 400px;
+    -moz-perspective: 400px;
+    -ms-perspective: 400px;
+    -o-perspective: 400px;
+    perspective: 400px;
+}
+.submenu li {
+    width: 200px;
+    overflow: hidden;
+    height: 50px;
+    opacity: 0;
+    background-color: #4d4d4d;
+ 
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    -o-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+ 
+    -webkit-transition: opacity .4s, -webkit-transform .5s;
+    -moz-transition: opacity .4s, -moz-transform .5s;
+    -ms-transition: opacity .4s, -ms-transform .5s;
+    -o-transition: opacity .4s, -o-transform .5s;
+    transition: opacity .4s, transform .5s;
+}
+.menu .submenu li a{
+    color: #fff;
+}
+.menu .submenu li:hover a {
+    border-left: 3px solid #4ea9ff;
+    border-radius: 0;
+    color: #4ea9ff;
+}
+.menu > li:hover .submenu, .menu > li:focus .submenu {
+    max-height: 2000px;
+    z-index: 10;
+}
+.menu > li:hover .submenu li, .menu > li:focus .submenu li {
+    opacity: 1;
+ 
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+}
+
+/* CSS3 delays for transition effects */
+.menu li:hover .submenu li:nth-child(1) {
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -ms-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+.menu li:hover .submenu li:nth-child(2) {
+    -webkit-transition-delay: 50ms;
+    -moz-transition-delay: 50ms;
+    -ms-transition-delay: 50ms;
+    -o-transition-delay: 50ms;
+    transition-delay: 50ms;
+}
+.menu li:hover .submenu li:nth-child(3) {
+    -webkit-transition-delay: 100ms;
+    -moz-transition-delay: 100ms;
+    -ms-transition-delay: 100ms;
+    -o-transition-delay: 100ms;
+    transition-delay: 100ms;
+}
+.menu li:hover .submenu li:nth-child(4) {
+    -webkit-transition-delay: 150ms;
+    -moz-transition-delay: 150ms;
+    -ms-transition-delay: 150ms;
+    -o-transition-delay: 150ms;
+    transition-delay: 150ms;
+}
+.menu li:hover .submenu li:nth-child(5) {
+    -webkit-transition-delay: 200ms;
+    -moz-transition-delay: 200ms;
+    -ms-transition-delay: 200ms;
+    -o-transition-delay: 200ms;
+    transition-delay: 200ms;
+}
+.menu li:hover .submenu li:nth-child(6) {
+    -webkit-transition-delay: 250ms;
+    -moz-transition-delay: 250ms;
+    -ms-transition-delay: 250ms;
+    -o-transition-delay: 250ms;
+    transition-delay: 250ms;
+}
+.menu li:hover .submenu li:nth-child(7) {
+    -webkit-transition-delay: 300ms;
+    -moz-transition-delay: 300ms;
+    -ms-transition-delay: 300ms;
+    -o-transition-delay: 300ms;
+    transition-delay: 300ms;
+}
+.menu li:hover .submenu li:nth-child(8) {
+    -webkit-transition-delay: 350ms;
+    -moz-transition-delay: 350ms;
+    -ms-transition-delay: 350ms;
+    -o-transition-delay: 350ms;
+    transition-delay: 350ms;
+}
+ 
+.submenu li:nth-child(1) {
+    -webkit-transition-delay: 350ms;
+    -moz-transition-delay: 350ms;
+    -ms-transition-delay: 350ms;
+    -o-transition-delay: 350ms;
+    transition-delay: 350ms;
+}
+.submenu li:nth-child(2) {
+    -webkit-transition-delay: 300ms;
+    -moz-transition-delay: 300ms;
+    -ms-transition-delay: 300ms;
+    -o-transition-delay: 300ms;
+    transition-delay: 300ms;
+}
+.submenu li:nth-child(3) {
+    -webkit-transition-delay: 250ms;
+    -moz-transition-delay: 250ms;
+    -ms-transition-delay: 250ms;
+    -o-transition-delay: 250ms;
+    transition-delay: 250ms;
+}
+.submenu li:nth-child(4) {
+    -webkit-transition-delay: 200ms;
+    -moz-transition-delay: 200ms;
+    -ms-transition-delay: 200ms;
+    -o-transition-delay: 200ms;
+    transition-delay: 200ms;
+}
+.submenu li:nth-child(5) {
+    -webkit-transition-delay: 150ms;
+    -moz-transition-delay: 150ms;
+    -ms-transition-delay: 150ms;
+    -o-transition-delay: 150ms;
+    transition-delay: 150ms;
+}
+.submenu li:nth-child(6) {
+    -webkit-transition-delay: 100ms;
+    -moz-transition-delay: 100ms;
+    -ms-transition-delay: 100ms;
+    -o-transition-delay: 100ms;
+    transition-delay: 100ms;
+}
+.submenu li:nth-child(7) {
+    -webkit-transition-delay: 50ms;
+    -moz-transition-delay: 50ms;
+    -ms-transition-delay: 50ms;
+    -o-transition-delay: 50ms;
+    transition-delay: 50ms;
+}
+.submenu li:nth-child(8) {
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -ms-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+
+#content1{
+    position: relative;
+    margin-top: 10px;
+    min-height: 1000px;
+}
+.content-tit{
+    background-image: url(../image/contentbackground.png);
+    width: 1000px;
+    height: 50px;
+    /*border:2px solid #000;*/
+    position: relative;
+    overflow: hidden;
+    margin: 10px auto;
+    text-align: center;
+}
+.introduceList{
+    margin-top: 40px;
+}
+.the_1,.the_2,.the_3{
+    margin-bottom: 40px;
+}
+.introduceList .intro_1,.introduceList .intro_2,.introduceList .intro_3{
+    width: 920px;
+    height: 40px;
+    margin: 10px auto;
+    position: relative;
+    left: -40px;
+
+}
+.introduceList .intro_1{
+    background-image: url(../image/描述.png);
+}
+.introduceList .intro_2{
+    background-image: url(../image/分类信息.png);
+}
+.introduceList .intro_3{
+    background-image: url(../image/其他信息.png);
+}
+.introduceList .introcont_1,.introduceList .introcont_2,.introduceList .introcont_3{
+    width: 958px;
+   
+    padding-left: 20px;
+    padding-right: 20px;
+    /*border:1px solid #000;*/
+    margin: 10px auto;
+    overflow: hidden;
+    /*background-image: url(../image/底部.png);*/
+    /*background-color: #e9eddf;*/
+}
+.introduceList .introcont_1,.introduceList .introcont_2,.introduceList .introcont_3{
+    border-right: 5px solid #4ea9ff;
+}
+.introduceList .introcont_1 p{
+    line-height: 200%;
+
+}
+.introduceList .introcont_2,.introduceList .introcont_3{
+     padding-top: 15px;
+    padding-bottom: 15px;   
+}
+.introduceList .introcont_2 div{
+    float: left;
+    width: 450px;
+}
+.introduceList .introcont_3 div{
+    float: left;
+    width: 450px;
+}
+.footer{
+    text-align: center;
+}
+.about_a{
+    margin-top:30px;
+    margin-bottom: 50px;
+}
+.about_a .about_tit{
+    margin: 10px auto;
+    min-height: 40px;
+    width: 1000px;
+    background-image: url(../image/相关链接.png);
+}
+.about{
+    width: 1000px;
+    height: 100px;
+    border:1px solid #4d4d4d;
+    margin: 10px auto;
+}
+.about ul{
+    clear: both;
+    font-size: 12px;
+    width: 920px;
+    height: 20px;
+    margin: 10px auto;
+}
+.about ul li {
+    list-style-type: none;
+    float: left;
+    margin-right: 20px;
+    width: 210px;
+}
+.about ul li a{
+    text-decoration: none;    
+    color: #000;
+}
+.about ul li a:hover{
+    /*text-decoration: blink;*/
+    color: red;
+}
+.footer{
+    background-color: #4d4d4d;
+    color: #fff;
+    margin: 0px auto;
+    width: 1000px;
+    height: 70px;
+}
+.footer p{
+    padding-top:15px;
+}
+#content2 #chart div{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.chart1,.chart2,.chart3,.chart4,.chart5，.chart6,.chart7{
+    margin-bottom: 40px;
+}
+.chart1{
+    margin-top:20px;
+}
+.chart7,.chart6 p{
+    line-height: 200%;
+    /*border: 1px solid #4d4d4d;*/
+}
+.empty_1{
+    margin-bottom: 10px;
+}
+#data{
+    width: 1000px;
+    margin: auto;
+}
+
+

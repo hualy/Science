@@ -1,0 +1,30 @@
+*{margin:0px;border: 0px;padding: 0px;}
+#chart{
+	width: 1000px;
+	text-align: center;
+	margin: auto;
+}
+
+
+#situation div{
+	
+	float: left;
+	width: 333px;
+	height: 400px;
+}
+
+#situation{
+	min-height: 400px;
+}
+
+#gender,#agePie,#ageLine,#ill,#situation,#recovery,#sequela,#iodine{
+	min-height: 400px;
+	width: 1000px;
+}
+
+.empty{
+	height: 50px;
+	margin:auto;
+}
+
+

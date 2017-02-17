@@ -1,0 +1,34 @@
+/* slideshow 2 */
+	
+.ss2_wrapper{ 
+	position:relative; 
+	width:1000px; 
+	height:400px; 
+	margin:0 auto; 
+	overflow:hidden;
+	border-top: 7px solid #4d4d4d;
+	border-bottom: 7px solid #4ea9ff;
+	}
+.ss2_wrapper .slideshow { position:relative; width:1000px; height:400px; }
+	
+	.ss2_wrapper .slideshow_item { width:1000px; height:400px; }
+	.ss2_wrapper .slideshow_item .data { display:none; }	
+	
+	.ss2_wrapper a.slideshow_prev { position:absolute; left:-40px; top:160px; z-index:10; width:40px; height:46px; outline:none; background:url(trans-black-70.png); -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; -moz-box-shadow: 0 0 2px #222; -webkit-box-shadow: 0 0 2px #222; box-shadow: 0 0 2px #222;  }
+		.ss2_wrapper a.slideshow_prev:hover { /*background:#000; */}
+		.ss2_wrapper a.slideshow_prev span { display:block; width:40px; height:46px; background:url(../image/arrow1.png) no-repeat 2px 50%; text-indent:-9999px; }
+		
+	.ss2_wrapper a.slideshow_next { position:absolute; right:-40px; top:160px; z-index:10; width:40px; height:46px; outline:none; background:url(trans-black-70.png); -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; -moz-box-shadow: 0 0 2px #222; -webkit-box-shadow: 0 0 2px #222; box-shadow: 0 0 2px #222;  }
+		.ss2_wrapper a.slideshow_next:hover { /*background:#000; */}
+		.ss2_wrapper a.slideshow_next span { display:block; width:40px; height:46px; background:url(../image/arrow2.png) no-repeat 2px 50%; text-indent:-9999px; }
+	
+	.ss2_wrapper .slideshow_paging { position:absolute; top:10px; right:10px; z-index:11; font-size:12px; padding:3px 2px; background:url(trans-black-70.png); -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; -moz-box-shadow: 0 0 2px #222; -webkit-box-shadow: 0 0 2px #222; box-shadow: 0 0 2px #222; }
+		.ss2_wrapper .slideshow_paging a { display:block; float:left; margin:0 1px; padding:3px 7px; color:#ccc; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
+			.ss2_wrapper .slideshow_paging a:hover { background:#000;  }
+			.ss2_wrapper .slideshow_paging a.activeSlide { background:#eee; color:#222 }
+	
+	.ss2_wrapper .slideshow_box { position:absolute; left:0; bottom:0; width:100%; height:110px; z-index:10;  }
+		.ss2_wrapper .slideshow_box .data { padding:0px 20px; color:#ccc;  }
+		.ss2_wrapper .slideshow_box .data h4 { color:#fff; font:bold 20px arial, sans-serif; padding:0; margin:0 0 10px 0; }
+		.ss2_wrapper .slideshow_box .data p { padding:0; 
+

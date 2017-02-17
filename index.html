@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>放射性碘治疗Graves病临床数据首页</title>
+    <link rel="stylesheet" href="css/slideshows.css" />
+    <script src="jquery/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.cycle.all.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/2.css">
+        <!--<style type="text/css">
+        body{
+            background-image: url("image/background.png");
+        }
+    </style>-->
+    <script>
+$(function() {
+// ---------------------------------------------------
+// Slideshow 2
+
+    $('#slideshow_2').cycle({
+        fx: 'fade',     
+        speed:  900, 
+        timeout: 5000, 
+        pager: '.ss2_wrapper .slideshow_paging', 
+        prev: '.ss2_wrapper .slideshow_prev',
+        next: '.ss2_wrapper .slideshow_next',
+        before: function(currSlideElement, nextSlideElement) {
+            var data = $('.data', $(nextSlideElement)).html();
+            $('.ss2_wrapper .slideshow_box').stop(true, true).animate({ bottom:'-110px'}, 400, function(){
+                $('.ss2_wrapper .slideshow_box .data').html(data);
+            });
+            $('.ss2_wrapper .slideshow_box').delay(100).animate({ bottom:'0'}, 400);
+        }
+    });
+
+    $('.ss2_wrapper').mouseenter(function(){
+        $('#slideshow_2').cycle('pause');
+        $('.ss2_wrapper .slideshow_prev').stop(true, true).animate({ left:'20px'}, 200);
+        $('.ss2_wrapper .slideshow_next').stop(true, true).animate({ right:'20px'}, 200);
+    }).mouseleave(function(){
+        $('#slideshow_2').cycle('resume');
+        $('.ss2_wrapper .slideshow_prev').stop(true, true).animate({ left:'-40px'}, 200);
+        $('.ss2_wrapper .slideshow_next').stop(true, true).animate({ right:'-40px'}, 200);
+    });
+    
+// ---------------------------------------------------
+    
+    $('a[href="#"]').click(function(event){ 
+        event.preventDefault(); // for this demo disable all links that point to "#"
+    });
+    
+});
+</script>
+</head>
+
+<body>
+	<!-- 整体区域开始 -->
+	<div class="wapper1">
+		<!-- 头部区域开始 -->
+		<div class="header">
+			<!-- banner -->
+			<div class="banner"></div>
+            <!-- 导航开始 -->
+            <div class="nav">
+<ul class="menu">
+    <li><a href="index.html">首页</a></li>
+    <li><a href="dataDisplay.html">数据展示</a>
+    </li>
+    <li class="active"><a href="#s2">参考文献</a>
+        <ul class="submenu">
+            <a href="pdf/Long-term follow up study of radioiodine treatment of.pdf" title="Long-term follow up study of radioiodine treatment of" target="_blank"><li>Long-term follow up study of radioiodine treatment of</li></a>
+            <a href="pdf/Objective estimates of the probability of developing.pdf" title="Objective estimates of the probability of developing" target="_blank"><li>Objective estimates of the probability of developing</li></a>
+            <a href="pdf/Radioiodine Treatment of Hyperthyroidism—Prognostic.pdf" title="Radioiodine Treatment of Hyperthyroidism—Prognostic" target="_blank"><li>Radioiodine Treatment of Hyperthyroidism—Prognostic</li></a>
+            <a href="pdf/Striving for Euthyroidism in Radioiodine Therapy.pdf" title="Striving for Euthyroidism in Radioiodine Therapy" target="_blank"><li>Striving for Euthyroidism in Radioiodine Therapy</li></a>
+        </ul>
+    </li>
+    <li><a href="#">诊疗指南</a>
+        <ul class="submenu">
+            <a href="pdf/Hyperthyroidism and Other Causes of Thyrotoxicosis.pdf" title="Hyperthyroidism and Other Causes of Thyrotoxicosis" target="_blank"><li>Hyperthyroidism and Other Causes of Thyrotoxicosis</li></a>
+            <a href="pdf/甲亢和其他原因引起的甲状腺毒症诊治指南.pdf" title="甲亢和其他原因引起的甲状腺毒症诊治指南" target="_blank"><li>甲亢和其他原因引起的甲状腺毒症诊治指南</li></a>
+        </ul>
+    </li>
+</ul>
+            </div>
+            <!-- 导航结束 -->
+		</div>
+        <!-- 头部结束 -->
+		<!-- 中部区域开始 -->
+<div id="content1">   
+        <!-- 内标题开始 -->
+        <div class="content-tit"><h2 style="margin-bottom: 0px; margin-top: 10px;color:#000;">放射性碘治疗Graves病临床数据库</h2></div>   
+        <!-- 内标题结束 -->
+        <!-- 轮播 开始-->
+        <div class="ss2_wrapper" >
+            <a href="#" class="slideshow_prev"><span>Previous</span></a>
+            <a href="#" class="slideshow_next"><span>Next</span></a>
+                
+            <div class="slideshow_paging"></div>
+            
+            <div class="slideshow_box">
+                <div class="data"></div>
+            </div>
+            
+            <div id="slideshow_2" class="slideshow">
+                
+                <div class="slideshow_item">
+                    <div class="image"><a href="#"><img src="image/scrollPic1.jpg" alt="photo 2" width="1000px" height="400px" /></a></div>
+                    <div class="data">
+                        <h4><a href="#" style="color: #fff">临床医学科学数据</a></h4>
+                        <p>临床医学科学数据中心做为其数据中心之一，数据资源包括临床流行病学调查、临床科学研究及临床实践活动中长期积累的具有重要科学价值和数据共享需求的数据。主要分布在卫生部、教育部、总后卫生部及各省市所属综合性医院和专科医院的信息中心、研究所、重点实验室。</p>
+
+                    </div>
+                </div>
+                                
+                <div class="slideshow_item">
+                    <div class="image"><a href="#"><img src="image/scrollPic2.jpg" alt="photo 3" width="1000px" height="400px" /></a></div>
+                    <div class="data">
+                        <h4><a href="#" style="color: #fff">临床科学数据资源</a></h4>
+                        <p>临床科学数据资源不是临床一般业务数据，而是面向全国范围公开征集，要求每个数据集的提供者必须是国内权威性研究机构、专科中心，提供的数据得到专家认可并通过数据质量检测。 </p>
+                    </div>
+
+                </div>
+                
+                <div class="slideshow_item">
+                    <div class="image"><a href="#"><img src="image/scrollPic3.jpg" alt="photo 1" width="1000px" height="400px" /></a></div>
+                    <div class="data">
+                        <h4><a href="#" style="color: #fff">临床科学数据量</a></h4>
+                        <p>近年来临床数据遴选范围逐年扩大，包括中国医学科学院系统、教育部所属医院和北京市专科医院。临床数据覆盖学科数由之前的11个增加到34个，数据集由22增加到111个，数据量增加了近5倍多。</p>
+                    </div>
+                </div>
+
+                
+                <div class="slideshow_item">
+                    <div class="image"><a href="#" ><img src="image/scrollPic4.jpg" alt="photo 4" width="1000px" height="400px" /></a></div>
+                    <div class="data">
+                        <h4><a href="#" style="color: #fff">临床科学数据存储</a></h4>
+                        <p>临床科学数据资源采取集中与适度分布相结合的存储方式。数据中心设在北京协和医院和解放军总医院共建的临床数据中心。集中存储，异地备份。从业务系统中抽提的原始数据和部分暂时不能完全公开的数据分别存储在各参建单位。</p>
+                    </div>
+                </div>          
+            </div>
+        </div><!-- .ss2_wrapper -->
+<!-- 介绍开始 -->
+<div class="introduceList">
+    <div class="the_1">
+    <div class="intro_1" id="intro_1"></div>
+    <div class="introcont_1" id="introcont_1">
+        <p>
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;本数据集随访自2004年1月至2007年12月期间北京协和医院核医学科131I治疗500例Graves病例，收集临床资料、131I剂量的确定以及治疗后3个月、6个月、9个月、1年、2年及3年甲状腺机能亢进（简称甲亢）缓解、甲状腺功能减退（简称甲减）发生例数，并利用excel表软件建立数据库。利用该软件完成了500例Graves病的临床资料数据库的建立，并进行了疗效、并发症甲减发生特点分析，数据库运行良好，有较强的数据处理能力。结果提示，该数据库简单、实用，有利于病例的信息化管理和临床、教学和科研水平的进一步提高。</p>
+    </div>        
+    </div>
+    <div class="the_2">
+    <div class="intro_2" id="intro_12"></div>
+    <div class="introcont_2" id="introcont_2">   
+            <div>
+                <b>类目名称 ：</b>疾病
+            </div> 
+           <div>
+               <b>类目编码 ：</b>MM1201
+           </div>
+           <div>
+               <b>分类标准名称 ：</b>人口健康科学数据共享分类与编码方案
+           </div>
+           <div>
+                <b>分类标准版本号 ：</b>1.2
+           </div>
+    </div>        
+    </div>
+    <div class="the_3">
+    <div class="intro_3" id="intro_3"></div>
+    <div class="introcont_3" id="introcont_3">
+        <div>
+             <b>标识符 ：</b>Clinic_Medicine_96
+        </div>
+        <div>
+            <b>最近提交日期 ：</b>2015-02-12        
+        </div>        
+        <div>
+            <b>关键字 ：</b>放射性碘-131 Graves病 甲亢 疗效
+        </div>
+        <div>
+            <b>访问限制 ：</b>1
+        </div>
+    </div>        
+    </div>
+</div>
+<!-- 介绍结束 -->
+    </div>
+    <!-- 中间内容结束 -->
+    <div class="about_a">
+        <div class="about_tit"></div>
+    <div class="about"> 
+        <ul>
+            <li><a href="http://www.escience.gov.cn/" title="">中国科技共享网</a></li>
+            <li><a href="http://www.kygl-training.com/" title="">临床与转化医学研究及技术进展和培训</a></li>
+            <li><a href="http://www.most.gov.cn/" title="">中华人民共和国科技部</a></li>
+            <li><a href="http://www.nhfpc.gov.cn/" title="">中华人民共和国卫生部</a></li>
+        </ul>
+        <ul>
+            <li><a href="http://www.pumc.edu.cn/" title="">中国医学科学院</a></li>
+            <li><a href="http://sbm.pumc.edu.cn/" title="">中国医学科学院基础医学研究所</a></li>
+            <li><a href="http://www.pumch.cn/" title="">中国医学科学院北京协和医院</a></li>
+            <li><a href="http://www.plagh.com.cn/" title="">中国人民解放军总医院</a></li>
+        </ul>
+        <ul>
+            <li><a href="http://www.chinacdc.cn/" title="">中国疾病预防控制中心</a></li>
+            <li><a href="http://www.catcm.ac.cn/" title="">中国中医科学院</a></li>
+            <li><a href="http://www.sda.gov.cn/WS01/CL0001/" title="">国家食品药品监督管理局</a></li>
+            <li><a href="http://www.imm.ac.cn/cn/index.asp" title="">中国医学科学院药物研究所</a></li>
+        </ul>
+    </div>             
+    </div>
+
+		<!-- 下部区域开始 -->
+		<div class="footer">
+        <p>
+                        负责单位名称 ：北京协和医院 &nbsp;&nbsp;|&nbsp;&nbsp;
+                        负责单位通讯地址 ：北京市东城区帅府园1号<br>
+                        负责单位邮政编码 ：100730 &nbsp;&nbsp;|&nbsp;&nbsp;
+                        负责单位联系电话 ：010-69155717 &nbsp;&nbsp;|&nbsp;&nbsp;
+                        负责单位电子邮件地址 ：ncmixh@126.com<br>
+        </p>			
+		</div>
+	</div>
+</body>
+</html>
